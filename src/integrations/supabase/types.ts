@@ -148,6 +148,57 @@ export type Database = {
           },
         ]
       }
+      places: {
+        Row: {
+          address: string
+          amenities: string[] | null
+          city: string
+          created_at: string | null
+          description: string | null
+          id: string
+          image_url: string | null
+          location: Json
+          name: string
+          price_range: string | null
+          rating: number | null
+          signature_menus: string[] | null
+          updated_at: string | null
+          visitor_photos: string[] | null
+        }
+        Insert: {
+          address: string
+          amenities?: string[] | null
+          city: string
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          location: Json
+          name: string
+          price_range?: string | null
+          rating?: number | null
+          signature_menus?: string[] | null
+          updated_at?: string | null
+          visitor_photos?: string[] | null
+        }
+        Update: {
+          address?: string
+          amenities?: string[] | null
+          city?: string
+          created_at?: string | null
+          description?: string | null
+          id?: string
+          image_url?: string | null
+          location?: Json
+          name?: string
+          price_range?: string | null
+          rating?: number | null
+          signature_menus?: string[] | null
+          updated_at?: string | null
+          visitor_photos?: string[] | null
+        }
+        Relationships: []
+      }
       user_history: {
         Row: {
           action_type: string
