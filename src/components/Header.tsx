@@ -34,7 +34,7 @@ const Header = () => {
         </nav>
 
         <div className="flex items-center space-x-4">
-          <Button variant="ghost" size="sm" onClick={() => navigate("/login")}>
+          <Button variant="ghost" size="sm" onClick={() => navigate("/auth")}>
             Sign In
           </Button>
           <Button variant="default" size="sm" className="bg-primary-gradient hover:opacity-90" onClick={() => navigate("/discover")}>
